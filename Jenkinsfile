@@ -1,6 +1,8 @@
 pipeline {
-    agent any 
-    stages {
+    agent {
+  label 'windows'
+}
+stages {
         stage('Build') {
             steps {
                 echo 'Build Starts!'
